@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: 'Press Start 2P', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #111;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      border-top: 4px solid #00ffff;
+      border-bottom: 4px solid #00ffff;
+    }
+
+    nav a {
+      color: #00ffff;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ff0080;
+    }
+
+    .about-bio {
+      margin-top: 2rem;
+      padding: 0.5rem;
+      max-width: 700px;
+      position: relative;
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .about-bio::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      right: -6px;
+      bottom: -6px;
+      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+      background-size: 1600% 1600%;
+      animation: rainbow-glow 6s linear infinite;
+      z-index: -1;
+      border-radius: 8px;
+    }
+
+    .bio-content {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      line-height: 2;
+      font-size: 0.8rem;
+      text-align: left;
+      border-radius: 4px;
+      position: relative;
+      z-index: 2;
+    }
+
+    @keyframes rainbow-glow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ABOUT ME</h1>
+  </header>
+
+  <nav>
+    <a href="mainPage.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="about-bio">
+    <div class="bio-content">
+      <p>
+        Hi! I'm Dale Spence. 
+        
+      </p>
+      <p>
+        Thank you for checking out my page!
+        I am a motivated student actively pursuing a Bachelors in Computer Science: Game Design, as well as a minor in Computer Science at the University of California Santa Cruz. 
+        I am particularly enthusiastic about AI, and eager to apply course knowledge, enhance programming skills, and expand practical experience within the field. 
+        I enjoy collaborating on team projects, building immersive experiences, and learning new tools to keep pushing my programming and design skills forward.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
